@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 </head>
 <body>
@@ -31,9 +31,9 @@
 <c:if test="${isVisible == true}" var="isVisible">
     <form action="/edit" method="post">
         Set new First Name
-        <input type="text" name="newFirstName">
+        <input type="text" name="firstName">
         Set new Last Name
-        <input type="text" name="newLastName">
+        <input type="text" name="lastName">
         <input type="submit" name="submit" value="Save">
     </form>
 </c:if>

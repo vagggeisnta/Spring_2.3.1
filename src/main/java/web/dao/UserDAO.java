@@ -8,9 +8,9 @@ public interface UserDAO {
 
     List<User> listOfUsers();
 
-    void addUser(String firstName, String lastName);
+    void addUser(User user);
 
     void deleteUser(Long id);
 
-    void editUser(Long id, String newFirstName, String newLastName);
+    void editUser(Long id, User user);
 }

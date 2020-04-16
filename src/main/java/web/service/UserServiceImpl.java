@@ -22,8 +22,8 @@ public class UserServiceImpl implements UserService {
 
     @Transactional
     @Override
-    public void addUser(String firstName, String lastName) {
-        userDAO.addUser(firstName, lastName);
+    public void addUser(User user) {
+        userDAO.addUser(user);
     }
 
     @Transactional
@@ -35,7 +35,7 @@ public class UserServiceImpl implements UserService {
 
     @Transactional
     @Override
-    public void editUser(Long id, String newFirstName, String newLastName){
-        userDAO.editUser(id, newFirstName, newLastName);
+    public void editUser(Long id, User user){
+        userDAO.editUser(id, user);
     }
 }
